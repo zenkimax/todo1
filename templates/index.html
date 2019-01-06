@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}index page{% end %}
+{% block content %}
+
+i am index page.<br/>
+{% for img_path in imgs %}
+<img src={{ static_url(img_path) }}/>
+{% end %}
+{% end %}
