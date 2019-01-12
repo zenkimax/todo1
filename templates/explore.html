@@ -6,7 +6,7 @@
 
 i am explore page. <br />
 {% for img_path in imgs %}
-<img src={{ static_url(img_path) }} width="200px"/>
+<img src="{{ static_url(img_path) }}" />
 {% end %}
 
 {% end  %}
